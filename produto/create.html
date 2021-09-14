@@ -89,7 +89,71 @@
   </nav>
 
   <div class="container" style="height: 77.6vh;">
+    <h3 class="display-3 mt-2 mb-2 text-center" >Cadastro de Produtos</h3>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="Codigo" class="form-label">Código</label>
+        <input type="text" class="form-control" id="Codigo" name="codigo">
+      </div>
+      <div class="col-md-6">
+        <label for="Nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="Nome" name="nome">
+      </div>
+      <div class="col-6">
+        <label for="Datavalidade" class="form-label">Data de validade</label>
+        <input type="date" class="form-control" id="Datavalidade" name="data-de-validade">
+      </div>
+      <div class="col-6">
+        <label for="Quantidade" class="form-label">Quantidade</label>
+        <input type="text" class="form-control" id="Quantidade" name="quantidade">
+      </div>
+      <div class="col-md-6">
+        <label for="tipoquantidade" class="form-label">Tipo de quantidade</label>
+        <select id="tipoquantidade" class="form-select" name="tipo-de-quantidade">
+          <option selected disabled>Escolha a tipagem da quantidade</option>
+          <option value="unidade">Unidade</option>
+          <option value="caixa">Caixa</option>
+          <option value="lote">Lote</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="peso" class="form-label">Peso</label>
+        <input type="text" class="form-control" id="peso" name="peso">
+      </div>
+      <div class="col-md-6">
+        <label for="tipopeso" class="form-label">Tipo de peso</label>
+        <select id="tipopeso" class="form-select" name="tipo-de-peso">
+          <option selected disabled>Escolha a tipagem do peso</option>
+          <option value="quilograma">Quilogramas</option>
+          <option value="grama">Gramas</option>
+          <option value="miligrama">Miligramas</option>
+          <option value="litro">Litros</option>
+          <option value="mililitro">Mililitros</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="fabricante" class="form-label">Fabricante</label>
+        <input type="text" class="form-control" id="fabricante" name="fabricante">
+      </div>
+      <div class="col-md-6">
+        <label for="preco" class="form-label">Preço</label>
+        <input type="text" class="form-control" id="preco" name="preco">
+      </div>
+      <div class="col-md-6">
+        <label for="tipoquantidade" class="form-label">Tipo de quantidade</label>
+        <select id="tipoquantidade" class="form-select" name="tipo-de-quantidade">
+          <option selected disabled>Escolha a categoria</option>
+          <option></option>
+        </select>
+      </div>
+      <a href="#" class="text-end">Não tem a categoria que busca? Adicione uma</a>
 
+      <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end mt-5">
+        <button type="button" class="btn btn-dark">Cancelar</button>
+        <button type="button" class="btn btn-dark">Limpar</button>
+        <button type="submit" class="btn btn-dark">Cadastrar</button>
+      </div>
+    </form>
   </div>
 
 <div id="div-footer">
