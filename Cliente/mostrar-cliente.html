@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <title>Promoção</title>
+    <title>Cliente</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -82,52 +82,49 @@
         </div>
       </nav>
     <div class="container" style="height: 77.6vh;">
-      <h3 class="display-3 mt-2 mb-2 text-center" >Mostrar Promoções</h3>
     <div class="row">
-
+        <div class="col-md-12">
+            <h1 class="display-3 mt-5 mb-5 text-center">Mostrar Produtos</h1>
+        </div>
+        <div class="col-md-10">
+           <input type="text" class="form-control" name="pesquisar" placeholder="Digite o nome do produto">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-dark rounded-circle fs-5">+</button>
+        </div>
         <div class="row mt-5 text-center">
         <table class="table-borderless">
             <thead>
               <tr>
-                <th scope="col">Código</th>
-                <th scope="col">Descrição</th>
-                <th scope="col">Onde se aplica</th>
-                <th scope="col">Como se aplica</th>
-                <th scope="col">Valor</th>
-                <th scope="col">Data de validade</th>
-                <th scope="col">Registrado por</th>
-                <th scope="col"></th>
+                <th scope="col">Nome</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Email</th>
+                <th scope="col">CEP</th>
+                <th scope="col">Logradouro</th>
+                <th scope="col">Número</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">Telefone</th>
                 
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>450</td>
-                <td>Promoção de dia dos pais</td>
-                <td>CPF</td>
-                <td>%</td>
-                <td>10</td>
-                <td>2021-08-25</td>
-                <td>Administrador</td>
-
-                <td><Button class="btn btn-warning btn-large">Editar</Button></td>
-                <td><Button class="btn btn-danger btn-large">Deletar</Button></td>
-              </tr>
-              <tr>
-                <td>324</td>
-                <td>Promoção de Páscoa</td>
-                <td>CPF</td>
-                <td>R$</td>
-                <td>20</td>
-                <td>2021-08-05</td>
-                <td>Balconista</td>
-
+                <td>Gabriel Santos</td>
+                <td>958746373</td>
+                <td>santos@santos.com</td>
+                <td>08120490</td>
+                <td>Rua Doutor João Procópio de Souza</td>
+                <td>228</td>
+                <td>São Paulo</td>
+                <td>11940028922</td>
                 <td><Button class="btn btn-warning btn-large">Editar</Button></td>
                 <td><Button class="btn btn-danger btn-large">Deletar</Button></td>
               </tr>
               
             </tbody>
           </table>
+          <a href="#" class="text-end mt-3">Buscando por algum cliente específico?</a>
+
         </div>
     </div>
     </div>
