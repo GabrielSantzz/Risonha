@@ -81,55 +81,56 @@
           </div>
         </div>
       </nav>
-    <div class="container" style="height: 77.6vh;">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="display-3 mt-2 mb-2 text-center">Pesquisar</h1>
-        </div>
-        <div class="col-md-10">
-           <input type="text" class="form-control" name="pesquisar" placeholder="Digite o nome do produto">
-        </div>
-        <div class="col-md-2">
-            <button type="button" class="btn btn-dark fs-5">+</button>
-        </div>
-        <div class="row mt-5 text-center">
-        <table class="table-borderless">
-            <thead>
-              <tr>
-                <th scope="col">Código</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Quantidade</th>
-                <th scope="col">Preço</th>
-                <th scope="col">Desconto</th>
-                <th scope="col">Total</th>
-                <th scope="col">Prestador</th>
-                <th scope="col">Data do Pagamento</th>
-                <th scope="col">Data do recebimento</th>
-                
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>123</td>
-                <td>Leite</td>
-                <td>2</td>
-                <td>2.05</td>
-                <td>10%</td>
-                <td>R$3.69</td>
-                <td>Administrador</td>
-                <td>2021-08-18</td>
-                <td>2021-08-25</td>
-                <td><Button class="btn btn-warning btn-large">Editar</Button></td>
-                <td><Button class="btn btn-danger btn-large">Deletar</Button></td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-    </div>
-    </div>
 
-    <div id="div-footer">
+      <div class="container" style="height: 77.6vh;">
+        <h3 class="display-3 mt-2 mb-2 text-center" >Editar Encomendas</h3>
+        <form class="row g-3">
+          <div class="col-md-9">
+            <label for="Codigo" class="form-label">Código</label>
+            <input type="text" class="form-control" id="Codigo" name="codigo">
+          </div>
+          <div class="col-md-2">
+            <label for="quantidade" class="form-label">Quantidade</label>
+            <input type="text" class="form-control" id="quantidade" name="quantidade">
+          </div>
+          <div class="col-md-1 mt-5">
+            <button type="button" class="btn btn-dark">+</button>
+          </div>
+          <div class="col-md-9">
+
+          </div>
+          <div class="col-md-3 mt-5">
+           <h3>Total:</h3>   
+          </div>
+          <div class="col-md-3">
+            <label for="CodigoPro" class="form-label">Código da Promoção</label>
+            <input type="text" class="form-control" id="CodigoPro" name="codigo=promocao">
+          </div>
+          <div class="col-md-3">
+            <label for="CPF" class="form-label">CPF do Cliente</label>
+            <input type="text" class="form-control" id="CPF" name="cpf">
+          </div>
+
+          <div class="col-3">
+            <label for="DataPagamento" class="form-label">Data de Pagamento</label>
+            <input type="date" class="form-control" id="DataPagamento" name="data-pagamento">
+          </div>
+
+          <div class="col-3">
+            <label for="DataRecebimento" class="form-label">Data de Recebimento</label>
+            <input type="date" class="form-control" id="DataRecebimento" name="data-recebimento">
+          </div>
+          
+    
+          <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end mt-5">
+            <button type="button" class="btn btn-dark">Cancelar</button>
+            <button type="button" class="btn btn-dark">Limpar</button>
+            <button type="submit" class="btn btn-dark">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="div-footer">
         <footer class="bg-dark text-center text-white">
           <!-- Grid container -->
           <div class="container p-4 pb-0">
